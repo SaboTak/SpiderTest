@@ -9,6 +9,9 @@ router.route('/')
     .get(getLibros)
     .post(createLibro)
 
+
+//Se requiere id especifico
+
 router.route('/:id')
     .get(getLibro)
     .put(updateLibro)

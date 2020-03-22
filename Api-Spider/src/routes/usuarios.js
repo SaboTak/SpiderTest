@@ -8,6 +8,8 @@ router.route('/')
     .get(getUsers)
     .post(createUser)
 
+//Se requiere id especifico
+
  router.route('/:id')
     //.get()
     //.put()
