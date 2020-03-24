@@ -6,7 +6,7 @@ Aplicacion Para Crear, Listar, editar y borrar libros. Cuenta con un sistema de 
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-_En el lugar donde quiere tener la aplicacion ejecute:_
+_ En el lugar donde quiere tener la aplicacion ejecute:_
 
 ```
 git clone https://github.com/SaboTak/SpiderTest.git
@@ -15,8 +15,8 @@ git clone https://github.com/SaboTak/SpiderTest.git
 
 ### Pre-requisitos 📋
 
-_Es necesario tener MongoDb instalado_
-_Para instalar mongoDb, solo debe visitar su sitio oficial_
+_Es necesario tener MongoDb instalado._
+_ Para instalar mongoDb, solo debe visitar su sitio oficial_
 
 ```
 http://mongodb.com/
