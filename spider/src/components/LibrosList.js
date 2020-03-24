@@ -1,19 +1,26 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import { connect } from 'react-redux';
+import {setLibros} from '../store'
 
 
-export default class LibrosList extends Component {
 
-    state={
-        libros: []
-    }
+export default connect((props => {
+    return props 
+}),{
+    setLibros
+}
+)
+( class LibrosList extends Component {
+
     componentDidMount(){
         this.getLibros();
     }
+
     async getLibros(){
         const res =await axios.get('http://localhost:4000/api/libros')
-        this.setState({libros:res.data})
+        this.props.setLibros(res.data)
     }
     deleteLibro= async (id) =>{
         await axios.delete('http://localhost:4000/api/libros/' + id);
@@ -25,7 +32,7 @@ export default class LibrosList extends Component {
         return (
             <div className="row">
                 {
-                    this.state.libros.map(libro => (
+                    this.props.libros.map(libro => (
                         <div className="col-md-4 p-2" key={libro._id}>
                             <div className="card">
                             <div className="card-img-top portadas">
@@ -53,4 +60,4 @@ export default class LibrosList extends Component {
             </div>
         )
     }
-}
+})
