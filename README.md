@@ -6,7 +6,7 @@ Aplicacion Para Crear, Listar, editar y borrar libros. Cuenta con un sistema de 
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
 
-_ En el lugar donde quiere tener la aplicacion ejecute:_
+_En el lugar donde quiere tener la aplicacion ejecute:_
 
 ```
 git clone https://github.com/SaboTak/SpiderTest.git
@@ -16,7 +16,7 @@ git clone https://github.com/SaboTak/SpiderTest.git
 ### Pre-requisitos 📋
 
 _Es necesario tener MongoDb instalado._
-_ Para instalar mongoDb, solo debe visitar su sitio oficial_
+_Para instalar mongoDb, solo debe visitar su sitio oficial_
 
 ```
 http://mongodb.com/
@@ -40,7 +40,7 @@ npm install
 _Una vez termine la instalacion, cree un archivo .env_
 
 ```
-mkdir .env
+.env
 ```
 
 _Dentro agrege la ruta de su base de datos_
@@ -49,7 +49,7 @@ _Dentro agrege la ruta de su base de datos_
 MONGODB_URI='[Tu Ruta]'  //Podria ser  'mongodb://localhost/SpiderBooks'
 ```
 
-_ En la misma terminal inicie el servidor usando: _
+_ En la misma terminal inicie el servidor usando:_
 
 ```
 npm run dev
@@ -68,6 +68,20 @@ npm start
 ```
 
 _Disfrute La App!_
+
+
+## Como Crear un Libro
+
+* _Seleccione un Autor previamente creado_
+
+* _Agrege el Titulo de Libro_
+
+* _Ingrese una direccion de imagen como por ejemplo:_
+```
+https://i.pinimg.com/originals/37/bc/6a/37bc6a5d57be6351d6c6236a8e24b49e.jpg
+```
+* _Agrege un precio a su libro_
+
 
 
 ## Construido con 🛠️
