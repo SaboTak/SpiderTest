@@ -67,7 +67,7 @@ export default class CreateLibro extends Component {
     render() {
         return (
             <div className="col-md-6 offset-md-3">
-                <div className="card card-body">
+                <div className="card card-body clts">
                     <h4>Ingresa tu libro!</h4>
 
                     {/* seleccionar usuario */}
@@ -79,9 +79,9 @@ export default class CreateLibro extends Component {
                         value={this.state.userSelect}
                         >
                             {
-                                this.state.users.map(user => 
+                                this.state.users.map(user =>                                 
                                 <option key={user} value={user}>
-                                    {user}
+                                    {"Autor: " + user}
                                 </option>
                                 )
                             }
@@ -124,6 +124,12 @@ export default class CreateLibro extends Component {
                             Guardar Libro
                         </button>
                     </form>
+                </div>
+                <div className="Frase ">
+                    <p>
+                    “...En algún lugar de un libro, hay una frase esperándonos para darle sentido a la existencia...”.
+                                                       <p className="AutFrase"> - Cervantes </p>
+                    </p>
                 </div>
             </div>
         )

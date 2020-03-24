@@ -1,12 +1,53 @@
 body{
-    background: #B2FEFA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
+.col-md-6{
+    padding-top: 30px;
+}
 
+/* Nav */
+.logo{
+    padding-right: 10px;
+    width: 50px;
+}
+.bg-light{
+    background-color: white!important;
+}
+.navbar-brand{
+    color: black!important;
+}
+.main-menuu{
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+}
+.navbar-brand{
+    font-size: 30px!important;
+    font-family: 'Lobster', cursive;
+}
+#navbarNav{
+    font-size: 25px!important;
+    font-family: 'Lobster Two', cursive;
+}
+a.nav-link{
+    color:black!important;
+    padding-left: 40px!important;
+}
+
+/* Libros */
 .card{
     text-align: center!important;
+}
+.card-header{
+    background-color: white!important;
+    font-family: 'Lora', serif;
+    text-align: center!important;
+}
+.aust{
+    text-align: center;
 }
 .portadas img{
     height: 500px; 
@@ -14,3 +55,56 @@ body{
 .covers{
     width: 100%;
   }
+.Titulo{
+    padding-top: 15px;
+}
+.Autor{
+    font-size: 20px;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+}
+.Price{
+    height: 50px;
+    width: 150px;
+    border-radius: 25px!important;
+    font-size: 20px;
+    border: 0px!important;
+    background-color: #96DEFF!important;
+    color: white!important;
+    margin-top: 10px;
+    margin-bottom: 20px!important;
+}
+.clts{
+    border-radius: 25px!important;
+    opacity: 1;
+}
+/* Frases */
+
+.Frase{
+    margin-top: 50px;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+}
+.AutFrase{
+    font-family: 'Lobster', cursive!important;
+    text-align: center;
+
+}
+/* Lobby */
+
+.lobby-l{
+    text-align: center;
+}
+.logol{
+    height: 350px;
+}
+.lobbyB{
+    margin-top: 30px;
+    margin-left: 50px;
+    padding-right: 30px;
+    margin-right: 20px;
+}
+.lobn{
+    margin-top: -10px;
+}

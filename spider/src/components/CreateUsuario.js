@@ -51,19 +51,21 @@ export default class CreateUsuario extends Component {
     render() {
         return (
             <div className="row">
-                <div className="col-md-4">
-                    <div className="card cardbody">
+                <div className="col-md-4 clts">
+                    <div className="card card-body clts">
                         <h3> Registrar Autor</h3>
                         <form onSubmit={this.onSubmit} >
                             <div className="form-group">
                                 <input type="text" 
-                                className="form-control"  
+                                className="form-control" 
+                                placeholder="Autor" 
                                 value={this.state.username}
                                 onChange={this.onChangeUsuario} />
                             </div>
                             <div className="form-group">
-                                <input type="password" 
+                                <input type="text" 
                                 className="form-control" 
+                                placeholder="¿Quien Registra?" 
                                 value={this.state.contraseña} 
                                 onChange={this.onChangeContraseña} />
                             </div>
@@ -73,19 +75,26 @@ export default class CreateUsuario extends Component {
                         </form>
                     </div>
                 </div>
-                <div className="col-md-8">
-                    <ul className="list-group">
+                <div className="col-md-8 ">
+                    <h3 className="card-body aust">Autores Registrados</h3>
+                    <ul className="list-group aust ">
                         {
                             this.state.usuarios.map(user => (
-                                <li className="list-group-item list-group-item-action" 
+                                <li className="list-group-item list-group-item-action clts" 
                                 key={user._id}
                                 onDoubleClick={() => this.deleteUser(user._id)}
                                 >
-                                    {user.usuario}
+                                    {"Autor: " + user.usuario} {"-   Agregado por: " + user.contraseña}
                                     
                                 </li>))
                         }
                     </ul>
+                </div>
+                <div className="Frase col-md-12">
+                    <p>
+                    “...El autor sólo escribe la mitad de un libro. De la otra mitad debe ocuparse el lector...”.
+                                                        <p className="AutFrase"> - J. Conrad </p>
+                    </p>
                 </div>
             </div>
         )

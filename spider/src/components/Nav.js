@@ -3,10 +3,16 @@ import {Link} from 'react-router-dom'
 export default class Nav extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light main-menuu">
+              <style>
+                @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Lobster+Two:400i&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+              </style>
             <div className="container">
             <Link className="navbar-brand" to="/">
-            Spider Books
+              <img src="https://image.flaticon.com/icons/svg/864/864702.svg" alt="Logo" className="logo"/>
+              Spider Books
             </Link>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span className="navbar-toggler-icon"></span>
@@ -18,14 +24,14 @@ export default class Nav extends Component {
                      Libros
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item active">
                     <Link className="nav-link" to="crear">
-                        Crear Libro
+                      Registrar Libro
                     </Link>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item active">
                     <Link className="nav-link" to="autores">
-                        Crear Autores
+                        Registrar Autor
                     </Link>
                 </li>
               </ul>

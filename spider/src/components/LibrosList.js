@@ -32,11 +32,11 @@ export default class LibrosList extends Component {
                                     <img className="covers" src={libro.imagen} alt={libro._id}/>
                                 </div>
                                 <div className="card-header">
-                                    <h5>{libro.titulo}</h5>
+                                    <h5 className="Titulo">{libro.titulo.toUpperCase()}</h5>
                                 </div>
                                 <div className="card-body">
-                                    <p> $ {libro.precio} USD</p>
-                                    <p>{libro.autor} </p>
+                                    <button className="Price btn btn-success"> $ {libro.precio} USD</button>
+                                    <p className="Autor">{"Autor: " + libro.autor} </p>
                                 </div>
                                 <div className="card-footer d-flex justify-content-between">
                                     <button className="btn btn-danger" onClick={() => {this.deleteLibro(libro._id)}}>
