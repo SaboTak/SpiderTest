@@ -1,6 +1,6 @@
 # Spider Books
 
-Aplicacion Para Crear, Listar, editar y borrar libros. Cuenta con un sistema de Creacion y eliminacion de Autores, creado de esta manera para mostrar como se comparten datos de un componente a otro. El Proyecto cuenta con una Api desarrollada en "Express Js" que se conecta con "React" el cual utiliza Redux como gestor de estados.
+Aplicacion Para Crear, Listar, editar y borrar libros. Cuenta con un sistema de Creacion y eliminacion de Autores, creado de esta manera para mostrar como se comparten datos de un componente a otro. El Proyecto cuenta con una Api desarrollada en "Express Js" que se conecta con "React". Este a su vez utiliza Redux como gestor de estados.
 
 ## Comenzando 🚀
 
