@@ -74,13 +74,15 @@ _Disfrute La App!_
 
 * _Seleccione un Autor previamente creado_
 
-* _Agrege el Titulo de Libro_
+* _Agrege el Titulo del Libro_
 
 * _Ingrese una direccion de imagen como por ejemplo:_
 ```
 https://i.pinimg.com/originals/37/bc/6a/37bc6a5d57be6351d6c6236a8e24b49e.jpg
 ```
 * _Agrege un precio a su libro_
+
+* Finalmente guarde su libro!.
 
 
 
