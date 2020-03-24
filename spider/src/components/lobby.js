@@ -16,10 +16,10 @@ export default class lobby extends Component {
                 </div>
                 <div className="lobbyB">
                     <Link to="/libros">
-                    <button className="btn btn-success lobbyB"> Obtener Libros</button>
+                    <button className="btn btn-success lobbyB"><img src="https://image.flaticon.com/icons/svg/1164/1164713.svg" alt="Libros" width="30px" />  Obtener Libros</button>
                     </Link>
                     <Link to="/crear">
-                    <button className="btn btn-info lobbyB"> Registrar Libro</button>
+                    <button className="btn btn-info lobbyB"><img src="https://image.flaticon.com/icons/svg/167/167755.svg" alt="Libros" width="30px" /> Registrar Libro</button>
                     </Link>
                 </div>
             </div>

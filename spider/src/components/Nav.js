@@ -3,11 +3,12 @@ import {Link} from 'react-router-dom'
 export default class Nav extends Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light main-menuu">
+            <nav  className="navbar navbar-expand-lg navbar-light bg-light main-menuu navbar-collapse">
               <style>
                 @import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
                 @import url('https://fonts.googleapis.com/css?family=Lobster+Two:400i&display=swap');
                 @import url('https://fonts.googleapis.com/css?family=Lora&display=swap');
+                @import url('https://fonts.googleapis.com/css?family=Playfair+Display:500i&display=swap');
               </style>
             <div className="container">
             <Link className="navbar-brand" to="/">
@@ -21,12 +22,12 @@ export default class Nav extends Component {
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item active">
                     <Link className="nav-link" to="libros">
-                     Libros
+                      Libros
                     </Link>
                 </li>
                 <li className="nav-item active">
                     <Link className="nav-link" to="crear">
-                      Registrar Libro
+                     Registrar Libro
                     </Link>
                 </li>
                 <li className="nav-item active">
